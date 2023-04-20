@@ -1,0 +1,30 @@
+train_batch_size: 32
+eval_batch_size: 256
+devices: 1
+auto_select_gpus: True
+benchmark : False
+accelerator: "gpu"
+auto_scale_batch_size: None
+accumulate_grad_batches: 2
+check_val_every_n_epoch: 1   
+val_check_interval: 1.0         
+amp_backend: "native"    
+mixed_precision: 32
+limit_train_batches: 1.0
+limit_val_batches: 1.0                                           
+limit_test_batches: 1.0                                      
+limit_predict_batches: 1.0     
+num_sanity_val_steps: 0
+deterministic: True
+max_epochs: 10                                                  
+min_epochs: 1     
+encoder_lr: 2e-5 
+decoder_lr: 2e-5 
+resume_from_checkpoint: ''
+enable_checkpointing: True
+avail_gpus: [1]
+model_checkpoint_path: None
+use_swa : False
+auto_lr_find : False
+early_stop: False
+use_evaluate: False
