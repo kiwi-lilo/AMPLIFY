@@ -1,0 +1,18 @@
+task_name: "SST-5"
+seed: 1998
+train_type: ["train","test","save_prediction","TTA_prediction"]
+tta_type : ["EDA"]
+logging_dir: ""
+# resume_from_checkpoint: ""
+predict_from_checkpoint: "best"
+checkpoint_path: ""
+profiler_path: ""
+init_method: ["raw","simcse","sig_annoy","sig_weight","sig_defy","defy","mean","max","min","annoy","faiss_cos","faiss_flat","faiss_l2","faiss_HNSW","faiss_HNSWSQ","faiss_HNSW64","faiss_HNSW64_new"]
+TTA_method: ["raw","sig_annoy","sig_weight","sig_defy","defy","mean","max","min","annoy","faiss_cos","faiss_flat","faiss_l2","faiss_HNSW","faiss_HNSWSQ","faiss_HNSW64"]
+TTA_model: ""
+TTA_checkpoint_path: ""
+device: ""
+root_dbl: "a6000_dbl"
+TTA_index_type: "sig"
+use_evaluate: False
+mixup_method: ["embed","sent","encoder"]
