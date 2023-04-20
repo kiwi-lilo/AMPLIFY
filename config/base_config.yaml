@@ -1,0 +1,5 @@
+defaults:
+  - basic: base
+  - model: base
+  - trainer: base
+  - data : base
