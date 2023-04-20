@@ -1,0 +1,7 @@
+num_workers: 0
+fold_num: 5
+train_augnum: 0
+valid_augnum: 33
+test_augnum: 33
+DA_type: "fillter_PDA_0.3"
+is_load_from_disk: False
