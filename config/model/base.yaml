@@ -1,0 +1,17 @@
+model_name: "bert_base_uncased"
+forward_type: "standard"
+correct_biased: False
+max_seq_length: 256
+use_ema: False
+scheduler: "cosine"
+weight_decay: 0
+adam_epsilon: 1e-8
+num_warmup_steps: 0
+num_cycles: 0.5
+checkpoint_path: ""
+freeze_encoder : False
+embedding_pretrained: None
+mixup_num: 0
+loss_type: "ce"
+optimizer: "adam"
+mixup_method: 'embed'
